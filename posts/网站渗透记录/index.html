@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
+2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
+域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
+dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
+nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
+搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
+2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。">
+    <meta name="generator" content="Hugo 0.123.7">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://example.org/posts/%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E8%AE%B0%E5%BD%95/">
+    
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
+2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
+域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
+dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
+nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
+搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
+2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="posts" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
+2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
+域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
+dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
+nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
+搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
+2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。">
+
+<meta itemprop="wordCount" content="67">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
+2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
+域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
+dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
+nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
+搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
+2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="网站渗透记录">网站渗透记录</h1>
+<h2 id="1确定目标">1、确定目标</h2>
+<p>网站：yanb2b.com</p>
+<h2 id="2信息收集">2、信息收集</h2>
+<h3 id="21域名注册人信息搜集">2.1域名注册人信息搜集</h3>
+<p><a href="http://whois.chinaz.com/">站长工具-whois查询</a></p>
+<pre tabindex="0"><code>域名    yanb2b.com
+注册商  Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)
+更新时间      2023年02月18日
+创建时间    2018年12月11日
+过期时间    2024年12月11日 
+注册商服务器    whois.west.cn
+DNS    ns1.alidns.com    ns2.alidns.com
+状态    正常(ok)
+</code></pre><h3 id="22子域名爆破">2.2子域名爆破</h3>
+<p>使用在线工具或其它本地工具：</p>
+<ul>
+<li>dnsenum</li>
+<li>layer子域名挖掘机</li>
+<li>subDomainBrute</li>
+<li>wydomain</li>
+<li><a href="https://www.cnblogs.com/Bssn007/p/16817428.html">子域名爆破の几种方式</a></li>
+</ul>
+<p><img src="https://s2.loli.net/2024/02/26/BoFAEZSPHRaf27s.png" alt="image-20240226225025222"></p>
+<h3 id="23如果有cdn则需要绕过寻找ip">2.3如果有CDN，则需要绕过寻找IP</h3>
+<p>具体方法见：<a href="https://zhuanlan.zhihu.com/p/33440472">判断ip是否为网站真实IP：</a></p>
+<ul>
+<li>nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/02/26/nrN1p4EfbiMVBQP.png" alt="image-20240226225058840"></p>
+<ul>
+<li>多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。</li>
+</ul>
+<h3 id="24-利用google收集域名和mail地址">2.4 利用Google收集域名和mail地址</h3>
+<p>工具：theHarvester、google hack</p>
+<ul>
+<li>搜索敏感文件
+site:xxx.com filetype:doc/xls/conf/inc intext:pass</li>
+<li>搜索管理后台
+site:xxx.com 管理/admin/login</li>
+<li>搜索mail
+site:xxx.com intext:@xxx.com</li>
+<li>搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php</li>
+</ul>
+<h3 id="25-网络组件搜索">2.5 网络组件搜索</h3>
+<p>工具：shodan.io、zoomeye.com、<a href="http://www.fofa.so/">www.fofa.so</a></p>
+<h3 id="26-icp备案查询">2.6 ICP备案查询</h3>
+<p>通过域名进行ICP备案查询，备案主体单位及法人代表。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
