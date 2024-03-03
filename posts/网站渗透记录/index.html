@@ -6,13 +6,7 @@
     
     <title>My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
-2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
-域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
-dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
-nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
-搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
-2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。">
+    <meta name="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com 2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询 域名 yanb2b.com 注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成">
     <meta name="generator" content="Hugo 0.123.7">
     
     
@@ -40,36 +34,18 @@ nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不�
     
 
     <meta property="og:title" content="" />
-<meta property="og:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
-2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
-域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
-dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
-nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
-搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
-2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。" />
+<meta property="og:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com 2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询 域名 yanb2b.com 注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="posts" />
 
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
-2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
-域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
-dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
-nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
-搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
-2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。">
+<meta itemprop="description" content="网站渗透记录 1、确定目标 网站：yanb2b.com 2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询 域名 yanb2b.com 注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成">
 
-<meta itemprop="wordCount" content="67">
+<meta itemprop="wordCount" content="546">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com
-2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询
-域名 yanb2b.com注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成都西维数码科技有限公司](https://upimg.baike.so.com/doc/751187-795074.html)更新时间 2023年02月18日创建时间 2018年12月11日过期时间 2024年12月11日 注册商服务器 whois.west.cnDNS ns1.alidns.com ns2.alidns.com状态 正常(ok) 2.2子域名爆破 使用在线工具或其它本地工具：
-dnsenum layer子域名挖掘机 subDomainBrute wydomain 子域名爆破の几种方式 2.3如果有CDN，则需要绕过寻找IP 具体方法见：判断ip是否为网站真实IP：
-nslookup：若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。 多地ping：使用不同区域ping，查看ping的ip结果是否唯一。若不唯一，则目标网站可能存在CDN。 2.4 利用Google收集域名和mail地址 工具：theHarvester、google hack
-搜索敏感文件 site:xxx.com filetype:doc/xls/conf/inc intext:pass 搜索管理后台 site:xxx.com 管理/admin/login 搜索mail site:xxx.com intext:@xxx.com 搜索敏感web路径 site:xxx.com intitle:mongodb inurl:28017 site:xxx.com inurl:sql.php/phpinfo.php 2.5 网络组件搜索 工具：shodan.io、zoomeye.com、www.fofa.so
-2.6 ICP备案查询 通过域名进行ICP备案查询，备案主体单位及法人代表。"/>
+<meta name="twitter:description" content="网站渗透记录 1、确定目标 网站：yanb2b.com 2、信息收集 2.1域名注册人信息搜集 站长工具-whois查询 域名 yanb2b.com 注册商 Chengdu West Dimension Digital Technology Co.,Ltd. - [成"/>
 
 	
   </head>
