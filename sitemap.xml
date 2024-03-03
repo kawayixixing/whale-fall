@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://freheit.top/</loc>
     <lastmod>2024-03-03T00:12:24+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://freheit.top/posts/</loc>
     <lastmod>2024-03-03T00:12:24+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/202403022100/</loc>
+    <loc>https://freheit.top/posts/202403022100/</loc>
   </url><url>
-    <loc>https://example.org/posts/%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://freheit.top/posts/%E7%BD%91%E7%AB%99%E6%B8%97%E9%80%8F%E8%AE%B0%E5%BD%95/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://freheit.top/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://freheit.top/tags/</loc>
   </url>
 </urlset>
